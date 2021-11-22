@@ -1,0 +1,16 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: 
+      name: Enviornment
+      url: https://github.com/Lilyyy6/Lilibeth_Clark_Portfolio
+    steps:
+      - name: deploy
+        # ...deployment-specific steps
