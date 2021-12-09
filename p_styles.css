@@ -1,0 +1,377 @@
+/*
+	portfolio main styles
+   Author: Lilibeth Clark
+   Date:   3 Dec 2021
+
+   Filename:         p_styles.css
+
+	colors:
+	A  - rgba(243, 222, 248, 97)
+	B - rgba(209, 170, 218, 85)
+	C - rgba(162, 197, 240, 94)
+	D - rgba(133, 218, 183, 85)
+	E - rgba(186, 250, 220, 98)
+*/
+
+html {
+	background-color: rgba(162, 197, 240, 94);
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/* body styles */
+
+body {
+	margin: 5% auto;
+	max-width: 800px;
+	background-color: rgba(243, 222, 248, 97);
+	box-shadow: black 5px 0px 15px,
+								black -5px 0px 15px;
+	border-radius: 10px;
+}
+
+/*article styles */
+
+h2, p:not(footer > p) {
+	padding-left: 5px;
+}
+
+article.body {
+	border-radius: 20px;
+	border: 2px solid purple;
+	margin: 4px;
+}
+
+article.buttons {
+	border-radius: 20px;
+	display: flex;
+	flex-flow: row wrap;
+}
+ /* button styles */
+ 
+ article.buttons button {
+	 flex: 1 1 150px;
+	 border-radius: 20px;
+	 border: 3px solid purple;
+	 margin: 10px;
+ }
+ 
+ article.buttons button a {
+	 display: block;
+	 padding: 30px 0px;
+ }
+ 
+ article.buttons > button.apps {
+	 border: none;
+	 background-color: purple;
+	 flex: 1 1 150px;
+ }
+ 
+  article.buttons > button.apps:hover,  article.buttons > button.apps:active {
+	 box-shadow: black 2px 5px 10px,
+								black -2px 5px 10px;
+ }
+ 
+ button.apps p {
+	 color: white;
+ }
+ 
+ /* basic stypes */
+
+
+
+/* nav */
+
+nav.horizontal {
+	height: auto;
+	width: 100%;
+}
+
+nav.horizontal ul {
+	text-align: center;
+	width: auto;
+	background-color: rgba(186, 250, 220, 98);
+	border-radius: 10px 10px 0px 0px;
+}
+
+nav.horizontal li {
+	font-size: 1.4em;
+	line-height: 2em;
+	list-style-type: none;
+	width: auto;
+}
+
+nav.horizontal li a {
+	text-decoration: none;
+	color: black;
+}
+
+nav.horizontal li:hover {
+	background-color: rgba(133, 218, 183, 85);
+}
+
+/* footer styles */
+
+footer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	height: 80px;
+	width: 100%;
+	background-color: rgba(209, 170, 218, 85);
+	border-radius: 0px 0px 10px 10px;
+	border-top: 4px dashed purple;
+	margin-top: 20px;
+}
+
+footer a {
+	flex: 1 1 auto;
+	border: 2px solid purple;
+	padding: 4px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+footer a:hover {
+	background-color: purple;
+	color: rgba(243, 222, 248, 97);
+}
+
+/*================== 
+	phone 
+===================*/
+@media only screen and (max-width: 480px) {
+		
+		article#bio {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		background-color: rgba(209, 170, 218, 85);
+		min-width: 280px;
+	}
+	
+	h1 {
+		flex: 1 1 auto;
+		font-size: 2em;
+		display: block;
+		border: 2px solid blue;
+		order: -1;
+		text-align: center;
+		margin: auto;
+	}
+	
+	img {
+		display: block;
+		width: 10%;
+		border: 2px solid purple;
+		margin: 8px auto;
+		border-radius: 20px;
+		flex: 1 1 100px;
+	}
+	
+	img#headshot {
+		order: 99;
+	}
+	
+	nav.horizontal {
+		min-width: 280px;
+	}
+	
+	body {
+		min-width: 280px;
+	}
+	
+}
+
+/*======================
+	Tablet
+=======================*/
+@media only screen and (max-width: 768px) {
+	article#bio {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: baseline;
+		background-color: rgba(209, 170, 218, 85);
+	}
+
+	img#headshot {
+		flex: 1 1 300px;
+		width: auto;
+	}
+	
+	img {
+	display: block;
+	width: 20%;
+	border: 2px solid purple;
+	margin: 4px;
+	border-radius: 20px;
+	}
+
+	h1 {
+		display: block;
+		flex: 3 1 100px;
+		font-size: 4.8em;
+		vertical-align: bottom;
+		padding-left: 5%;
+	}
+	
+	nav.horizontal ul > li > a {
+		display: block;
+	}
+
+}
+
+/* ==========================
+	Desktop
+============================*/
+@media only screen and (min-width: 769px) {
+	article#bio {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: baseline;
+		background-color: rgba(209, 170, 218, 85);
+	}
+	
+	article.body {
+		padding: 10px;
+	}
+	
+	article.body p {
+		font-size: 1.1em;
+		text-indent: 25px;
+	}
+
+	img#headshot {
+		flex: 1 1 300px;
+		width: auto;
+	}
+	
+	img {
+	display: block;
+	width: 20%;
+	border: 2px solid purple;
+	margin: 4px;
+	border-radius: 20px;
+	}
+
+	h1 {
+		display: block;
+		flex: 3 1 100px;
+		font-size: 4.8em;
+		vertical-align: bottom;
+		padding-left: 5%;
+	}
+	
+	nav.horizontal ul {
+		display: flex;
+		flex-flow: row wrap;
+		height: 50px;
+	}
+	
+	nav.horizontal ul > li {
+		flex: 1 1 auto;
+	}
+	
+	nav.horizontal ul > li > a {
+		display: block;
+	}
+	
+	nav.horizontal li:hover {
+		background-color: rgba(133, 218, 183, 85);
+		border-radius: 0px 0px 20px 20px;
+	}
+	
+	article.buttons {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	article.buttons button p {
+		font-size: 1.5em;
+	}
+	
+	button.apps img {
+		width: 200px;
+		height: 200px;
+		border-radius: 40px;
+		margin: auto;
+	}
+	
+	button.apps {
+		padding-top: 10px;
+	}
+	
+	button.proj {
+		background-color: rgba(209, 170, 218, 85);
+	}
+	
+	button.proj:hover {
+		background-color: rgba(209, 170, 218, 85);
+	}
+	
+	/* App Page (individual) */
+	
+	article.appHead {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	
+	article.appHead img {
+		flex: 1 1 100px;
+		margin: 10px;
+		border-radius: 40px;
+	}
+	
+	article.appHead div.titles {
+		flex: 1 1 100px;
+	}
+	
+	h2 {
+		padding-left: 5%;
+	}
+	
+	p a {
+	flex: 1 1 auto;
+	border: 2px solid purple;
+	padding: 4px;
+	border-radius: 10px;
+	text-decoration: none;
+	}
+	
+	p a:hover {
+		color: white;
+		background-color: purple;
+	}
+	
+	article.img {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: baseline;
+	}
+	
+	article.img img {
+		flex: 1 1 200px;
+		max-width: 200px;
+		margin: 10px;
+	}
+	
+	article.foot {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		margin-bottom: 10px;
+	}
+	
+	article.foot a {
+		flex: 1 1 100px;
+		padding: 10px;
+	}
+	
+}
+

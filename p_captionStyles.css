@@ -1,0 +1,20 @@
+/* 
+p_captionStyles.css 
+Lilibeth Clark
+9 Dec 2021
+
+For: きくお - ソワカの声.vtt, p_caption.html
+*/
+
+
+h1, h2 {
+	text-align: center;
+}
+
+div.video {
+	width: 100%;
+}
+
+video {
+	width: 100%;
+}
