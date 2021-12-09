@@ -18,3 +18,72 @@ div.video {
 video {
 	width: 100%;
 }
+
+article {
+	display: flex;
+}
+
+p a {
+	border: 2px solid purple;
+	padding: 4px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+p a:hover {
+	background-color: purple;
+	color: rgba(243, 222, 248, 97);
+}
+
+@media only screen and (max-width: 480px) {
+
+	img {
+		flex: 1 2 100px;
+		border: none;
+	}
+
+	div.box {
+		flex: 2 1 100px;
+	}
+	
+	div.box p {
+		text-indent: 2px;
+	}
+	
+	h1 {
+		font-size: 2em;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	img {
+		flex: 1 2 100px;
+		border: none;
+	}
+	
+	div.box {
+		flex: 3 1 100px;
+	}
+	
+	div.box p {
+		text-indent: 25px;
+	}
+	
+}
+
+@media only screen and (min-width: 769px) {
+	img {
+		flex: 1 2 100px;
+		border: none;
+		margin: 10px;
+	}
+	
+	div.box {
+		flex: 3 1 100px;
+		margin: 10px;
+	}
+	
+	div.box p {
+		text-indent: 25px;
+	}
+}
