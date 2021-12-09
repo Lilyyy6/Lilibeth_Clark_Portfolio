@@ -35,6 +35,10 @@ p a:hover {
 	color: rgba(243, 222, 248, 97);
 }
 
+p.buttons {
+	text-align: center;
+	margin: 4px;
+
 @media only screen and (max-width: 480px) {
 
 	img {
