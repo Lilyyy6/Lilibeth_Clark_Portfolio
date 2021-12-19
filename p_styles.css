@@ -1,20 +1,14 @@
+@import url("p_edit.css");
 /*
 	portfolio main styles
    Author: Lilibeth Clark
    Date:   3 Dec 2021
 
    Filename:         p_styles.css
-
-	colors:
-	A  - rgba(243, 222, 248, 97)
-	B - rgba(209, 170, 218, 85)
-	C - rgba(162, 197, 240, 94)
-	D - rgba(133, 218, 183, 85)
-	E - rgba(186, 250, 220, 98)
 */
 
 html {
-	background-color: rgba(162, 197, 240, 94);
+	background: linear-gradient(#CF00FF, #CFC5FF, #CFFFFF) fixed;
 }
 
 a {
@@ -22,18 +16,26 @@ a {
 	text-decoration: none;
 }
 
-/* body styles */
+	/* body styles */
 
 body {
 	margin: 5% auto;
 	max-width: 800px;
-	background-color: rgba(243, 222, 248, 97);
+	background-color: #CFC5FF;
 	box-shadow: black 5px 0px 15px,
 								black -5px 0px 15px;
 	border-radius: 10px;
 }
 
-/*article styles */
+	/*article styles */
+	
+article.top {
+	background: linear-gradient(#CFFFFF, #CFC5FF);
+}
+
+article#bio {
+	background: linear-gradient(#CFFFFF, #CFC5FF);
+}
 
 h2, p:not(footer > p) {
 	padding-left: 5px;
@@ -50,7 +52,7 @@ article.buttons {
 	display: flex;
 	flex-flow: row wrap;
 }
- /* button styles */
+	/* button styles */
  
  article.buttons button {
 	 flex: 1 1 150px;
@@ -61,12 +63,11 @@ article.buttons {
  
  article.buttons button a {
 	 display: block;
-	 padding: 30px 0px;
  }
  
  article.buttons > button.apps {
 	 border: none;
-	 background-color: purple;
+	 background-color: #AA00CC;
 	 flex: 1 1 150px;
  }
  
@@ -77,24 +78,29 @@ article.buttons {
  
  button.apps p {
 	 color: white;
+	 margin: 5px;
  }
  
- /* basic stypes */
+	/* nav */
 
-
-
-/* nav */
+a#navicon {
+	display:none;
+}
 
 nav.horizontal {
 	height: auto;
 	width: 100%;
+	background: linear-gradient(#CF00FF, #CFFFFF);
+	border-radius: 10px 10px 0px 0px;
 }
 
 nav.horizontal ul {
 	text-align: center;
 	width: auto;
-	background-color: rgba(186, 250, 220, 98);
+	height: 100%;
 	border-radius: 10px 10px 0px 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 nav.horizontal li {
@@ -110,10 +116,10 @@ nav.horizontal li a {
 }
 
 nav.horizontal li:hover {
-	background-color: rgba(133, 218, 183, 85);
+	background-color: #CFFFFF;
 }
 
-/* footer styles */
+	/* footer styles */
 
 footer {
 	display: flex;
@@ -121,21 +127,25 @@ footer {
 	justify-content: space-around;
 	height: 80px;
 	width: 100%;
-	background-color: rgba(209, 170, 218, 85);
+	background: linear-gradient(#CFFFFF, #CF00FF);
 	border-radius: 0px 0px 10px 10px;
 	border-top: 4px dashed purple;
 	margin-top: 20px;
+	padding-top: 10px;
 }
 
-footer a {
+
+
+footer a.button {
 	flex: 1 1 auto;
 	border: 2px solid purple;
 	padding: 4px;
+	margin: 4px;
 	border-radius: 10px;
 	text-decoration: none;
 }
 
-footer a:hover {
+footer a.button:hover {
 	background-color: purple;
 	color: rgba(243, 222, 248, 97);
 }
@@ -144,23 +154,25 @@ footer a:hover {
 	phone 
 ===================*/
 @media only screen and (max-width: 480px) {
-		
-		article#bio {
+		/* home page */
+	article#bio {
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: center;
-		background-color: rgba(209, 170, 218, 85);
 		min-width: 280px;
+		border-radius: 0px 10px;
 	}
 	
 	h1 {
 		flex: 1 1 auto;
-		font-size: 2em;
+		font-size: 2.5em;
 		display: block;
-		border: 2px solid blue;
-		order: -1;
 		text-align: center;
-		margin: auto;
+		margin: 10px auto;
+	}
+	
+	h1.name {
+		order: -1;
 	}
 	
 	img {
@@ -173,15 +185,67 @@ footer a:hover {
 	}
 	
 	img#headshot {
-		order: 99;
+		flex: 1 1 100px;
+		width: 45%;
+	}
+
+		/* navigation */
+	
+	a#navicon {
+		display: block;
 	}
 	
-	nav.horizontal {
-		min-width: 280px;
+	a#navicon img {
+		border: none;
+		margin: 0px;
 	}
+
+	nav.horizontal ul {
+		display: none;
+	}
+   
+   a#navicon:hover+ul, nav.horizontal ul:hover {
+	   display: block;
+   }
+   
+   nav.horizontal ul li {
+	   border-radius: 10px;
+   }
 	
 	body {
 		min-width: 280px;
+	}
+	
+	nav.horizontal ul {
+		display: none;
+	}
+	
+	/* projects page buttons */ 
+	
+	article.buttons {
+		margin: 10px;
+	}
+	
+	button.proj {
+		background-color: #D5D3FF;
+	}
+	
+	button.proj:hover {
+		background: linear-gradient(#AA00CC, #D5D3FF);
+	}
+	
+	button.proj a {
+		display: block;
+		height: 100%;
+		border: 1px solid green;
+	}
+	
+	button.proj a p {
+		font-size: 1.5em;
+	}
+	
+	footer {
+		height: 100px;
 	}
 	
 }
@@ -189,25 +253,25 @@ footer a:hover {
 /*======================
 	Tablet
 =======================*/
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) {
+	/* home page */
+	
 	article#bio {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: flex-start;
-		align-items: baseline;
-		background-color: rgba(209, 170, 218, 85);
+		align-items: flex-end;
 	}
 
 	img#headshot {
-		flex: 1 1 300px;
-		width: auto;
+		flex: 1 1 100px;
 	}
 	
 	img {
 	display: block;
 	width: 20%;
 	border: 2px solid purple;
-	margin: 4px;
+	margin: 0px 4px;
 	border-radius: 20px;
 	}
 
@@ -217,10 +281,38 @@ footer a:hover {
 		font-size: 4.8em;
 		vertical-align: bottom;
 		padding-left: 5%;
+		margin-bottom: 0px;
 	}
+	
+	/* navigation */ 
 	
 	nav.horizontal ul > li > a {
 		display: block;
+	}
+	
+	nav.horizontal ul {
+		display: flex;
+		flex-flow: row wrap;
+		height: 50px;
+	}
+	
+	nav.horizontal ul > li {
+		flex: 1 1 auto;
+	}
+	
+	nav.horizontal li:hover {
+		background-color: #CFFFFF;
+		border-radius: 0px 0px 20px 20px;
+	}
+	
+	/* projects page */
+	
+	button.proj {
+		background-color: #D5D3FF;
+	}
+	
+	button.proj:hover {
+		background: linear-gradient(#AA00CC, #D5D3FF);
 	}
 
 }
@@ -229,12 +321,12 @@ footer a:hover {
 	Desktop
 ============================*/
 @media only screen and (min-width: 769px) {
+	/* home page */
 	article#bio {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: flex-start;
-		align-items: baseline;
-		background-color: rgba(209, 170, 218, 85);
+		align-items: flex-end;
 	}
 	
 	article.body {
@@ -247,8 +339,7 @@ footer a:hover {
 	}
 
 	img#headshot {
-		flex: 1 1 300px;
-		width: auto;
+		flex: 1 1 100px;
 	}
 	
 	img {
@@ -266,6 +357,8 @@ footer a:hover {
 		vertical-align: bottom;
 		padding-left: 5%;
 	}
+	
+	/* navigation */
 	
 	nav.horizontal ul {
 		display: flex;
@@ -282,96 +375,20 @@ footer a:hover {
 	}
 	
 	nav.horizontal li:hover {
-		background-color: rgba(133, 218, 183, 85);
+		background-color: #CFFFFF;
 		border-radius: 0px 0px 20px 20px;
 	}
-	
-	article.buttons {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-	
-	article.buttons button p {
-		font-size: 1.5em;
-	}
-	
-	button.apps img {
-		width: 200px;
-		height: 200px;
-		border-radius: 40px;
-		margin: auto;
-	}
-	
-	button.apps {
-		padding-top: 10px;
-	}
+
+	/* projects page */
 	
 	button.proj {
-		background-color: rgba(209, 170, 218, 85);
+		background-color: #D5D3FF;
 	}
 	
 	button.proj:hover {
-		background-color: rgba(209, 170, 218, 85);
-	}
-	
-	/* App Page (individual) */
-	
-	article.appHead {
-		display: flex;
-		flex-flow: row wrap;
-	}
-	
-	article.appHead img {
-		flex: 1 1 100px;
-		margin: 10px;
-		border-radius: 40px;
-	}
-	
-	article.appHead div.titles {
-		flex: 1 1 100px;
-	}
-	
-	h2 {
-		padding-left: 5%;
-	}
-	
-	p a {
-	flex: 1 1 auto;
-	border: 2px solid purple;
-	padding: 4px;
-	border-radius: 10px;
-	text-decoration: none;
-	}
-	
-	p a:hover {
-		color: white;
-		background-color: purple;
-	}
-	
-	article.img {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: flex-start;
-		align-items: baseline;
-	}
-	
-	article.img img {
-		flex: 1 1 200px;
-		max-width: 200px;
-		margin: 10px;
-	}
-	
-	article.foot {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-around;
-		margin-bottom: 10px;
-	}
-	
-	article.foot a {
-		flex: 1 1 100px;
-		padding: 10px;
+		background: linear-gradient(#AA00CC, #D5D3FF);
 	}
 	
 }
+
 
