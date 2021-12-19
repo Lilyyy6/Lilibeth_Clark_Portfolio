@@ -1,0 +1,125 @@
+/*
+	Projects structure table (for tablet + desktop) 
+   Author: Lilibeth Clark
+   Date:   15 Dec 2021
+
+   Filename:         p_table.css
+
+	colors:
+	A  - rgba(243, 222, 248, 97)
+	B - rgba(209, 170, 218, 85)
+	C - rgba(162, 197, 240, 94)
+	D - rgba(133, 218, 183, 85)
+	E - rgba(186, 250, 220, 98)
+*/
+
+/* ======================
+	phone
+	====================== */
+@media only screen and (max-width: 480px) {
+	article.buttons {
+		display: flex;
+	}
+	
+	table {
+		display: none;
+	}
+	
+	article.buttons {
+	border-radius: 20px;
+	display: flex;
+	flex-flow: row wrap;
+}
+	/* button styles */
+ 
+ article.buttons button {
+	 flex: 1 1 150px;
+	 border-radius: 20px;
+	 border: 3px solid purple;
+	 margin: 10px;
+ }
+ 
+ article.buttons button a {
+	 display: block;
+ }
+}
+
+/* =======================
+	Tablet
+	======================= */
+@media only screen and (min-width: 481px) {
+	article.buttons {
+		display: none;
+	}
+	
+	table {
+		display: table;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		border-spacing: 10px;
+	}
+	
+	table tr td {
+		text-align: center;
+		width: 50%;
+		height: 200px;
+	}
+	
+	td button.proj {
+		width: 100%;
+		height: 100%;
+		padding: 0px;
+		border-radius: 20px;
+	}
+	
+	button.proj a {
+		border: 2px solid green;
+		display: block;
+	}
+	
+	button.proj a p {
+		margin-top: 45%;
+		margin-bottom: 45%;
+		font-size: 2em;
+	}
+}
+
+/* ===================
+	desktop
+	=================== */
+@media only screen and (min-width: 769px) {
+	article.buttons {
+		display: none;
+	}
+	
+	table {
+		display: table;
+		width: 50%;
+		margin: 30px auto;
+		border-spacing: 10px;
+	}
+	
+	table tr td {
+		text-align: center;
+		width: 50%;
+		height: 200px;
+	}
+	
+	td button.proj {
+		width: 100%;
+		height: 100%;
+		padding: 0px;
+		border-radius: 30px;
+	}
+	
+	button.proj a {
+		border: 2px solid green;
+		display: block;
+	}
+	
+	button.proj a p {
+		margin: 45% 0px;
+		font-size: 2em;
+	} 
+}

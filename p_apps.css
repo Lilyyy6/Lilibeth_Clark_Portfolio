@@ -1,0 +1,290 @@
+/*
+	Apps Pages main styles
+   Author: Lilibeth Clark
+   Date:   15 Dec 2021
+
+   Filename:         p_apps.css
+
+	colors:
+	A  - rgba(243, 222, 248, 97)
+	B - rgba(209, 170, 218, 85)
+	C - rgba(162, 197, 240, 94)
+	D - rgba(133, 218, 183, 85)
+	E - rgba(186, 250, 220, 98)
+*/
+
+/*	===============================================
+		Phone styles
+	=============================================== */
+@media only screen and (max-width: 480px) {
+		/* page head styles */
+		
+	article.appHead div.titles {
+		display: none;
+	}
+	
+	article.appHead {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+	}
+	
+	article.appHead img {
+		flex: 2 1 100px;
+		margin: 10px;
+		border-radius: 40px;
+	}
+	
+		/* page body styles */
+	
+	article.img {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: baseline;
+	}
+	
+	article.img a {
+		flex: 1 2 100px;
+		max-width: 200px;
+		margin: 10px;
+		width: 50%;
+	}
+	
+	article.img a img {
+		width: 100%;
+		height: auto;
+	}
+	
+		/* page foot styles */
+	
+	article.foot {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		margin-bottom: 10px;
+	}
+	
+	article.foot a {
+		flex: 1 1 100px;
+		padding: 10px;
+	}
+	
+	p a.button {
+		flex: 1 1 auto;
+		border: 2px solid purple;
+		padding: 4px;
+		border-radius: 10px;
+		text-decoration: none;
+	}
+	p a:hover {
+		color: white;
+		background-color: purple;
+	}
+	
+	/* ====
+		Apps main page
+		===*/
+		button.apps img {
+			width: 70%;
+		}
+		
+	
+}
+
+/* 	===============================================
+		Tablet styles
+	=============================================== */
+@media only screen and (min-width: 481px) {
+	
+		/* page head styles */
+	
+	article.appHead {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+	}
+	
+	article.appHead img {
+		flex: 1 1 100px;
+		margin: 10px;
+		border-radius: 40px;
+	}
+	
+	article.appHead div.titles {
+		display: none;
+	}
+	
+	article.appHead h1.tablet {
+		flex: 2 1 100px;
+		font-size: 3.5em;
+		margin-top: auto;
+	}
+	
+	article.appHead div.titles2 {
+		padding: 10px;
+		width: 100%;
+	}
+	
+		/* page foot styles */
+	
+	article.foot {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		margin-bottom: 10px;
+	}
+	
+	article.foot a {
+		flex: 1 1 100px;
+		padding: 10px;
+	}
+	
+	p a.button {
+		flex: 1 1 auto;
+		border: 2px solid purple;
+		padding: 4px;
+		border-radius: 10px;
+		text-decoration: none;
+	}
+	p a:hover {
+		color: white;
+		background-color: purple;
+	}
+
+		/* page body styles */
+	
+	article.img {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: stretch;
+	}
+	
+	article.img a {
+		flex: 1 1 200px;
+		max-width: 200px;
+		margin: 10px;
+	}
+	
+	article.img a img {
+		width: 100%;
+		height: auto;
+	}
+	
+	/* ===
+	Apps main page
+	=== */
+	
+	button.apps img {
+			width: 70%;
+			margin: 8px auto;
+		}
+}
+
+
+/* 	===============================================
+		Desktop Styles
+	=============================================== */
+	@media only screen and (min-width: 769px) {
+	/* App Page (individual) */
+	
+	article.appHead {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	
+	article.appHead img {
+		flex: 1 1 100px;
+		margin: 10px;
+		border-radius: 40px;
+	}
+	
+	article.appHead div.titles {
+		flex: 1 1 100px;
+		display: block;
+	}
+	
+	article.appHead div.titles2 {
+		display: none;
+	}
+	
+	h1.tablet {
+		display: none;
+	}
+	
+	h2 {
+		padding-left: 5%;
+	}
+	
+	p a.button {
+		flex: 1 1 auto;
+		border: 2px solid purple;
+		padding: 4px;
+		border-radius: 10px;
+		text-decoration: none;
+	}
+	
+	p a.button:hover {
+		color: white;
+		background-color: purple;
+	}
+	
+	article.img {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+	
+	article.img a {
+		flex: 1 1 200px;
+		max-width: 200px;
+		margin: 10px;
+	}
+	
+	article.img a img {
+		width: 100%;
+		height: auto;
+	}
+	
+	article.foot {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		margin-bottom: 10px;
+	}
+	
+	article.foot a.button {
+		flex: 1 1 100px;
+		padding: 10px;
+	}
+	
+	/*===
+	Apps main page styles 
+	=== */
+	article.buttons {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	article.buttons button p {
+		font-size: 1.5em;
+	}
+	
+	article.buttons button a {
+	 display: block;
+	 padding: 30px 0px;
+ }
+	
+	button.apps img {
+		width: 200px;
+		height: 200px;
+		border-radius: 40px;
+		margin: auto;
+	}
+	
+	button.apps {
+		padding-top: 10px;
+	}
+}
