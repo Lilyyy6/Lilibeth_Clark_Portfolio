@@ -239,7 +239,6 @@ footer a.button:hover {
 	button.proj a {
 		display: block;
 		height: 100%;
-		border: 1px solid green;
 	}
 	
 	button.proj a p {
