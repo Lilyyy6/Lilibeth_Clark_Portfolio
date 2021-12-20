@@ -23,7 +23,7 @@ a {
 body {
 	margin: 5% auto;
 	max-width: 800px;
-	background: linear-gradient(#CFFFFF, #CFC5FF, #CFC5FF);
+	background: linear-gradient(#CFFFFF, #CFC5FF, #CFC5FF, #CFFFFF);
 	box-shadow: black 5px 0px 15px,
 		black -5px 0px 15px;
 	border-radius: 10px;
@@ -32,7 +32,7 @@ body {
 	/*article styles */
 	
 article.top {
-	background: linear-gradient(#CFFFFF, #CFC5FF);
+	/* background: linear-gradient(#CFFFFF, #CFC5FF); */
 }
 
 article#bio {
