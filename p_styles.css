@@ -23,9 +23,9 @@ a {
 body {
 	margin: 5% auto;
 	max-width: 800px;
-	background-color: #CFC5FF;
+	background: linear-gradient(#CFFFFF, #CFC5FF, #CFC5FF);
 	box-shadow: black 5px 0px 15px,
-								black -5px 0px 15px;
+		black -5px 0px 15px;
 	border-radius: 10px;
 }
 
