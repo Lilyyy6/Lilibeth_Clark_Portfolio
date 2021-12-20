@@ -6,6 +6,9 @@ Lilibeth Clark
 For: きくお - ソワカの声.vtt, p_caption.html
 */
 
+body {
+	background: linear-gradient(#CFFFFF, #CFC5FF, #CFC5FF);
+}
 
 h1, h2 {
 	text-align: center;
