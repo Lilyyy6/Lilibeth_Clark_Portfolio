@@ -44,6 +44,18 @@ div.formRow {
 	margin: 7px 0px;
 }
 
+input[type='text']:valid, input[type='mail']:valid {
+	background-color: #60F7C3;
+}
+
+input[type='text']:invalid, input[type='mail']:invalid {
+	background-color: #FF87AB;
+}
+
+input:focus, textarea:focus {
+	background-color: #FAB8FF;
+}
+
 /* ================
  Mobile
  ================= */
