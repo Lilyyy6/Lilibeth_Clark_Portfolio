@@ -24,13 +24,13 @@
 			<fieldset>
 				<legend>Email Form (not currently functional)</legend>
 				<div class="formRow">
-					<label for="email">Email</label>
-					<input name="eAdress" id="email" type="mail" />
+					<label for="email">Email*</label>
+					<input name="eAdress" id="email" type="email" required />
 					<div class="space"></div>
 				</div>
 				<div class="formRow">
-					<label for="subject">Subject</label>
-					<input name="subject" id="subject" type="text" />
+					<label for="subject">Subject*</label>
+					<input name="subject" id="subject" type="text" required />
 					<div class="space"></div>
 				</div>
 				<div class="formRow">
@@ -56,12 +56,12 @@
 					<div class="space"></div>
 				</div>
 				<div class="formRow">
-					<label for="content">Email Content</label>
-					<textarea name="EmContent" id="content"></textarea>
+					<label for="content">Email Content*</label>
+					<textarea name="EmContent" id="content" required></textarea>
 				</div>
 				<div class="formRow">
-					<label for="name">Name</label>
-					<input name="name" id="name" type="text" />
+					<label for="name">Name*</label>
+					<input name="name" id="name" type="text" required />
 					<div class="space"></div>
 				</div>
 				<div class="formRow">
@@ -69,10 +69,20 @@
 					<input name="group" id="group" type="text" />
 					<div class="space"></div>
 				</div>
+				<div class="formRow">
+					<label for="phone">Phone (only to show regrex)</label>
+					<input name="phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+					<div class="space"></div>
+				</div>
 				
 				<div class="formRow">
 					<input type="submit" value="Send" />
 					<input type="reset" value="Clear Form" />
+				</div>
+				<div class="formRow">
+					<p>This form is currently non-functional, and will not collect 
+					any information. It will check if your answers are correct though 
+					(through proper formatting).</p>
 				</div>
 			</fieldset>
 		</form>
