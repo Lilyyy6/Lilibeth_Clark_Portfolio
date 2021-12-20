@@ -5,12 +5,6 @@
 
    Filename:         p_table.css
 
-	colors:
-	A  - rgba(243, 222, 248, 97)
-	B - rgba(209, 170, 218, 85)
-	C - rgba(162, 197, 240, 94)
-	D - rgba(133, 218, 183, 85)
-	E - rgba(186, 250, 220, 98)
 */
 
 /* ======================
@@ -74,7 +68,6 @@
 	}
 	
 	button.proj a {
-		border: 2px solid green;
 		display: block;
 	}
 	
@@ -114,7 +107,6 @@
 	}
 	
 	button.proj a {
-		border: 2px solid green;
 		display: block;
 	}
 	
