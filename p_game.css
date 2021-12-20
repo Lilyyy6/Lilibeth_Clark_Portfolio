@@ -1,0 +1,136 @@
+/* p_game.css
+
+Lilibeth Clark
+19 Dec 2021
+*/ 
+
+article.body {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+div.game {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+div.game img {
+	flex: 1 2 100px;
+}
+div.game div.p {
+	flex: 2 1 100px;
+}
+
+body {
+	background: linear-gradient(#CFFFFF, #CFC5FF, #CFFFFF);
+}
+
+p.desc {
+	text-indent: 25px;
+}
+
+a.button {
+	border: 2px solid purple;
+	padding: 4px;
+	margin: 4px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+a.button:hover {
+	background-color: purple;
+	color: rgba(243, 222, 248, 97);
+}
+
+h2 {
+	font-size: 1.7em;
+}
+
+div.img {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+div.img > img {
+	flex: 1 1 100px;
+	max-width: 380px;
+}
+
+div.buttons {
+	padding: 5px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+div.buttons a {
+	flex: 1 1 50px;
+	text-align: center;
+	max-width: 200px;
+}
+
+/* ================
+	Mobile 
+	================ */
+@media only screen and (max-width: 480px){
+	p.desc {
+		display: none;
+	}
+	
+	div.img img {
+		width: 95%;
+	}
+	
+	p a.link {
+		color: #CF00FF;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+}
+	
+/* ================
+	Tablet
+	================ */
+@media only screen and (min-width: 481px) {
+	p.desc {
+		display: none;
+	}
+	
+	div.img img {
+		width: 80%;
+	}
+	
+	p a.link {
+		color: #CF00FF;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+}
+	
+/* ================
+	Desktop
+	================ */
+@media only screen and (min-width: 769px) {
+	p.desc {
+		display: block;
+	}
+	
+	div.img img {
+		width: 50%;
+	}
+	
+	p a.link {
+		color: purple;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	p a.link:hover {
+		text-decoration: underline;
+		color: #CF00FF;
+	}
+}
+	
